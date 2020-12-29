@@ -8,9 +8,9 @@
     ```
     FROM python:3
     ENV PYTHONDONTWRITEBYTECODE 1
-    ENV PYTHBUFFERED 1
-    RUN mkdir / code
-    WORKDIR / code
+    ENV PYTHONUNBUFFERED 1
+    RUN mkdir /code
+    WORKDIR /code
     COPY . /code/
     ```
 2. make a file called ```main.py```
